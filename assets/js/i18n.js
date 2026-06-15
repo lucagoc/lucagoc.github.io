@@ -21,7 +21,6 @@ const translations = {
         "featured-projects-subtitle": "A curated selection of my most significant and impactful work.",
         "view-all-projects": "View All Projects",
         "project-wip": "???",
-        "footer-rights": "2026 Lucas Balmès. No rights reserved.",
 
 
 
@@ -85,7 +84,6 @@ const translations = {
         "featured-projects-subtitle": "Une sélection de mes travaux les plus impactants.",
         "view-all-projects": "Voir tous les projets",
         "project-wip": "???",
-        "footer-rights": "2026 Lucas Balmès. Aucun droit réservé.",
 
 
 
