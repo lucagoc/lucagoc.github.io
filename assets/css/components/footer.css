@@ -1,0 +1,19 @@
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--surface-color);
+    border-top: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+}
+
+footer .links-grid {
+    margin-bottom: 3rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}

@@ -1,0 +1,45 @@
+.scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+@keyframes arrows-bounce {
+    0%, 100% {
+        transform: rotate(45deg) translate(0, 0);
+        opacity: 0.3;
+        border-color: var(--text-secondary);
+    }
+    50% {
+        transform: rotate(45deg) translate(2px, 2px);
+        opacity: 1;
+        border-color: var(--accent-color);
+    }
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrows span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--text-secondary);
+    border-bottom: 2px solid var(--text-secondary);
+    transform: rotate(45deg);
+    margin: -2px;
+    animation: arrows-bounce 1.6s ease-in-out infinite;
+}
+
+.arrows span:nth-child(2) {
+    animation-delay: 0.2s;
+}

@@ -1,0 +1,35 @@
+/* Icon styles */
+.icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: currentColor;
+    -webkit-mask: var(--icon-url) no-repeat center / contain;
+    mask: var(--icon-url) no-repeat center / contain;
+    vertical-align: middle;
+}
+
+.btn .icon {
+    margin-right: 0.5rem;
+}
+
+.icon-home { --icon-url: url('../../icons/home.svg'); }
+.icon-projects { --icon-url: url('../../icons/code.svg'); }
+.icon-hobbies { --icon-url: url('../../icons/palette.svg'); }
+.icon-about { --icon-url: url('../../icons/user.svg'); }
+.icon-github { --icon-url: url('../../icons/github.svg'); }
+.icon-gitlab { --icon-url: url('../../icons/gitlab.svg'); }
+.icon-email { --icon-url: url('../../icons/mail.svg'); }
+.icon-kofi { --icon-url: url('../../icons/coffee.svg'); }
+.icon-blog { --icon-url: url('../../icons/pen.svg'); }
+.icon-gamepad { --icon-url: url('../../icons/play.svg'); }
+.icon-terminal { --icon-url: url('../../icons/terminal.svg'); }
+.icon-edit { --icon-url: url('../../icons/edit.svg'); }
+.icon-camera { --icon-url: url('../../icons/camera.svg'); }
+.icon-zap { --icon-url: url('../../icons/zap.svg'); }
+.icon-book { --icon-url: url('../../icons/book.svg'); }
+.icon-music { --icon-url: url('../../icons/music.svg'); }
+.icon-file { --icon-url: url('../../icons/file.svg'); }
+.icon-python { --icon-url: url('../../icons/python.svg'); }
+.icon-youtube { --icon-url: url('../../icons/youtube.svg'); }
+.icon-globe { --icon-url: url('../../icons/globe.svg'); }

@@ -1,0 +1,20 @@
+/* Button Component */
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn.primary {
+    background: var(--gradient-1);
+    color: white;
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+.btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(56, 189, 248, 0.4);
+}

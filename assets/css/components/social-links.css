@@ -1,0 +1,52 @@
+/* External Links Section */
+.links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    background: var(--surface-color);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--gradient-1);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.social-link:hover::before {
+    width: 100%;
+}
+
+.social-link:hover {
+    color: white;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .social-link {
+        width: 100%;
+        justify-content: center;
+    }
+}

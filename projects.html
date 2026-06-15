@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Balmès - Projects</title>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+    <!-- Font is imported locally in styles.css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- Components -->
+    <link rel="stylesheet" href="assets/css/components/icons.css">
+    <link rel="stylesheet" href="assets/css/components/navbar.css">
+    <link rel="stylesheet" href="assets/css/components/social-links.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/project-card.css">
+    <!-- Pages -->
+    <link rel="stylesheet" href="assets/css/pages/projects.css">
+    <!-- Translation -->
+    <script src="assets/js/i18n.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Lucas Balmès</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#hero"><span class="icon icon-home"></span><span
+                            data-i18n="nav-home">Home</span></a></li>
+                <li><a href="projects.html"><span class="icon icon-projects"></span><span
+                            data-i18n="nav-projects">Projects</span></a></li>
+                <li>
+                    <button id="lang-switch" class="lang-switch-btn" aria-label="Toggle language">
+                        <span class="icon icon-globe"></span>
+                        <span class="lang-text">FR</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+
+        <!-- Personal Projects -->
+        <section class="section">
+            <h1 class="section-title"><span class="icon icon-projects"></span><span
+                    data-i18n="personal-projects-title">Personal Projects</span></h1>
+            <p class="section-subtitle" data-i18n="personal-projects-subtitle">A collection of personal projects built
+                for fun and learning.</p>
+            <div class="projects-grid">
+
+                <!-- Flick Dash -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/flick_dash.png" alt="Flick Dash application interface">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flick Dash</h3>
+                        <p data-i18n="proj-flick-dash-desc">Android application to learn and master flick typing on
+                            a Japanese keyboard. Under review for
+                            publication.</p>
+                        <div class="tags">
+                            <span class="tag">Jetpack Compose</span>
+                            <span class="tag">Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Pypixelcolor -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/pypixelcolor.png" alt="Pypixelcolor project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>pypixelcolor</h3>
+                        <p data-i18n="proj-pypixelcolor-desc">A complete Python library to control iPixel Color devices.
+                            More than 22k+ downloads.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">CLI</span>
+                            <a href="https://pypi.org/project/pypixelcolor/" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="PyPI"><span class="icon icon-python"></span></a>
+                            <a href="https://lucagoc.github.io/pypixelcolor/main/" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="Documentation"><span
+                                    class="icon icon-book"></span></a>
+                            <a href="https://github.com/lucagoc/pypixelcolor" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iPixelESPHome -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/ipixelesphome.png" alt="iPixel-ESPHome project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>iPixel-ESPHome</h3>
+                        <p data-i18n="proj-ipixelesphome-desc">C++ port of pypixelcolor for ESPHome.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">ESP32</span>
+                            <a href="https://github.com/lucagoc/ipixel-esphome" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- PixelArcadeLauncher -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/pixel_arcade_launcher.png" alt="PixelArcadeLauncher banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pixel Arcade Launcher (PAL)</h3>
+                        <p data-i18n="proj-pal-desc">Open-source Godot-powered launcher for arcade machines.</p>
+                        <div class="tags">
+                            <span class="tag">Godot</span>
+                            <span class="tag">gdscript</span>
+                            <a href="https://github.com/lucagoc/PixelArcadeLauncher" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yogalinux -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/sysinfo_yoga.png" alt="Yogalinux system information banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>YogaLinux</h3>
+                        <p data-i18n="proj-yogalinux-desc">Collection of SSDT and custom drivers to run Linux on the
+                            Lenovo
+                            Yoga 14APU8.</p>
+                        <div class="tags">
+                            <span class="tag">Linux</span>
+                            <span class="tag">Assembly</span>
+                            <a href="https://github.com/lucagoc/yoga-14APU8-linux" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beat LAN Tournament Utility -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/beatsabertournament.png" alt="Beat Saber Tournament Banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>Beat LAN Tournament Utility</h3>
+                        <p data-i18n="proj-beatlan-desc">Beat Saber mod to add LAN tournament support with a real-time
+                            leaderboard.</p>
+                        <div class="tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wake Commander -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/wakecommander.png" alt="Wake Commander project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>Wake Commander</h3>
+                        <p data-i18n="proj-wakecommander-desc">Velocity plugins to wake up servers that have been put to sleep.</p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Velocity</span>
+                            <a href="https://github.com/lucagoc/WakeCommander" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OWACCA -->
+                <div class="project-card blurred">
+                    <div class="project-badge" data-i18n="project-wip">???</div>
+                    <div class="project-image">
+                        <img src="assets/img/projects/owacca.png" alt="OWACCA Game Banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>OWACCA</h3>
+                        <p data-i18n="proj-owacca-desc">Clone of the (dead) rhythm arcade game WACCA using the osu!
+                            framework. Under early
+                            development.</p>
+                        <div class="tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">.NET</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Academic Projects -->
+        <section class="section">
+            <h1 class="section-title"><span class="icon icon-book"></span><span
+                    data-i18n="academic-projects-title">Academic Projects</span></h1>
+            <p class="section-subtitle" data-i18n="academic-projects-subtitle">Projects developed as part of my computer
+                science curriculum.</p>
+            <div class="projects-grid">
+
+                <!-- My Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/website.png" alt="Lucagoc Website Project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>lucagoc.fr</h3>
+                        <p data-i18n="proj-lucagoc-desc">Modern and responsive personal website built with HTML/CSS and
+                            enhanced with JavaScript for fluid animations and dynamic multilingual support.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IBEF -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/ibef.png" alt="IBEF Project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>IBEF</h3>
+                        <p data-i18n="proj-ibef-desc">Cross-platform application for visualizing flexion data from a
+                            test bench.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flutter</span>
+                            <a href="https://github.com/lucagoc/ibef-frontend" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LoRAWAN -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/lorawan.jpg" alt="MKRWAN 1310 LoRaWAN banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>MKRWAN 1310 LoRaWAN</h3>
+                        <p data-i18n="proj-mkrwan-desc">C firmware for Arduino MKR WAN 1310 to transmit encrypted data
+                            over LoRaWAN.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Encryption</span>
+                            <a href="https://gitlab.com/lucagoc/firmware-mkrwan1310-lorawan" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-gitlab"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Tiny's Brainf* interpreter -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/brainfuck.png"
+                            alt="Lucagoc's tiny brainf*ck interpreter Project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>Lucagoc's tiny brainf*ck interpreter</h3>
+                        <p data-i18n="proj-brainfuck-desc">Simple implementation of a Brainf*ck interpreter in C.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Brainfuck</span>
+                            <a href="https://github.com/lucagoc/MyTinyBrainF-ckInterpreter" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LPWAN Collision Simulation Frontend -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/lpwan.jpg" alt="LPWAN Collision Front banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>LPWAN Collision Simulation Frontend</h3>
+                        <p data-i18n="proj-lpwan-desc">Nuxt.js-powered frontend for LPWAN collision simulation.</p>
+                        <div class="tags">
+                            <span class="tag">Nuxt.js</span>
+                            <span class="tag">REST API</span>
+                            <a href="https://github.com/lucagoc/lpwan-collision-simulation-front" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real Time Car OS -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/realtime.png" alt="RTOS Firmware Project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>RTOS Firmware</h3>
+                        <p data-i18n="proj-rtos-desc">Simple RTOS for a car running in a simulator.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">FreeRTOS</span>
+                            <a href="https://gitlab.com/lucagoc/zz3f1-informatique-embarquee-2026" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-gitlab"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Agent-based Simulation -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/car_agent_simulation.png" alt="IBEF Project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>Car Agent-based Simulation</h3>
+                        <p data-i18n="proj-car-simulation-desc">A CLI Java agent-based simulation of road traffic.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <a href="https://gitlab.com/lucagoc/tp-simulation-long" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-gitlab"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Numba CUDA Mandelbrot -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/mandelbrot.png" alt="Numba CUDA Mandelbrot Project banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>CUDA Numba Mandelbrot</h3>
+                        <p data-i18n="cuda-numba-mandelbrot-simulation-desc">Mandelbrot implementation in CUDA Numba.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">CUDA</span>
+                            <a href="https://gitlab.com/lucagoc/numba-cuda-mandelbrot" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                    class="icon icon-gitlab"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OcaSnake -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/ocasnake.png" alt="OcaSnake banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>ocaSnake!</h3>
+                        <p data-i18n="proj-ocasnake-desc">Pure OCaml snake game.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Ocaml</span>
+                            <a href="https://github.com/lucagoc/ocaSnake" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tetros -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/projects/tetros.png" alt="Tetros banner">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tetros</h3>
+                        <p data-i18n="proj-tetros-desc">Pure C Tetris game.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <a href="https://github.com/lucagoc/tetris-MP2I" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View project"><span
+                                    class="icon icon-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Game Jams -->
+        <section class="section">
+            <h2 class="section-title"><span class="icon icon-gamepad"></span><span data-i18n="game-jams-title">Game
+                    Jams</span></h2>
+            <p class="section-subtitle" data-i18n="game-jams-subtitle">Games created during time-limited hackathons and
+                game design events.</p>
+            <div class="projects-container">
+                <div class="projects-grid">
+
+                    <!-- Cave of Aria -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/cave_of_aria.png" alt="Cave of Aria banner">
+                        </div>
+                        <div class="project-info">
+                            <h3>Cave of Aria</h3>
+                            <p data-i18n="proj-cave-of-aria-desc">Rhythm game with 2D platformer elements.</p>
+                            <div class="tags">
+                                <span class="tag">Godot</span>
+                                <span class="tag">gdscript</span>
+                                <a href="https://www.youtube.com/watch?v=aa3_LsQQmag" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="YouTube"><span
+                                        class="icon icon-youtube"></span></a>
+                                <a href="https://lucagoc.fr/projects/cave-of-aria" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                        class="icon icon-gamepad"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Joe's Adventures -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/joe.png" alt="Banner of Joe the Adventurer">
+                        </div>
+                        <div class="project-info">
+                            <h3>Joe The Adventurer</h3>
+                            <p data-i18n="proj-joe-desc">A Metroidvania game based on the story of Joe.</p>
+                            <div class="tags">
+                                <span class="tag">Godot</span>
+                                <span class="tag">gdscript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Untitled VR Escape Game -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/unnamedvr.png" alt="Banner of Untitled VR Escape Game">
+                        </div>
+                        <div class="project-info">
+                            <h3>Untitled VR Escape Game</h3>
+                            <p data-i18n="proj-unnamedvr-desc">Medieval crafting-based escape game in VR.</p>
+                            <div class="tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">OpenXR</span>
+                                <a href="https://www.youtube.com/watch?v=jjwlo7S5qH4" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="YouTube"><span
+                                        class="icon icon-youtube"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horizon : VR Down -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/tprvi.png" alt="Banner of Horizon : VR Down">
+                        </div>
+                        <div class="project-info">
+                            <h3>Horizon : VR Down</h3>
+                            <p data-i18n="proj-tprvi-desc">Parody game of Horizon: Zero Dawn in VR.</p>
+                            <div class="tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">OpenXR</span>
+                                <a href="https://www.youtube.com/watch?v=YlkCb0SXo-4" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="YouTube"><span
+                                        class="icon icon-youtube"></span></a>
+                                <a href="https://gitlab.isima.fr/machutaux/tprvi" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                        class="icon icon-gitlab"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SDP3DVR -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/sdp3dvr.png" alt="Banner of SDP3DVR">
+                        </div>
+                        <div class="project-info">
+                            <h3>SUPER DUPER PUCKMAN 3D VR EDITION</h3>
+                            <p data-i18n="proj-sdp3dvr-desc">Parody game of Pac-Man in VR.</p>
+                            <div class="tags">
+                                <span class="tag">Godot</span>
+                                <span class="tag">OpenXR</span>
+                                <a href="https://www.youtube.com/watch?v=zvrFNufvHv4" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="YouTube"><span
+                                        class="icon icon-youtube"></span></a>
+                                <a href="https://lucagoc.itch.io/super-duper-puckman-3d-virtual-reality-edition"
+                                    target="_blank" rel="noopener noreferrer" class="project-link"
+                                    aria-label="View project"><span class="icon icon-gamepad"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contributions -->
+        <section class="section">
+            <h2 class="section-title"><span class="icon icon-file"></span><span
+                    data-i18n="contributions-title">Contributions</span></h2>
+            <p class="section-subtitle" data-i18n="contributions-subtitle">These are public projects to which I have
+                contributed.</p>
+            <div class="projects-container">
+                <div class="projects-grid">
+                    <!-- Systemd -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/systemd.png" alt="systemd banner">
+                        </div>
+                        <div class="project-info">
+                            <h3>systemd</h3>
+                            <p data-i18n="proj-systemd-desc">Added accelerometer mapping for Chromebooks.</p>
+                            <div class="tags">
+                                <span class="tag">Linux</span>
+                                <a href="https://github.com/systemd/systemd" target="_blank" rel="noopener noreferrer"
+                                    class="project-link" aria-label="View project"><span
+                                        class="icon icon-github"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kindle Modding Community -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/kindlemodding.webp" alt="Kindle Modding Community Banner">
+                        </div>
+                        <div class="project-info">
+                            <h3>Kindle Jailbreak</h3>
+                            <p data-i18n="proj-kindle-desc">Documented the AdBreak entry point for the Kindle Scribe.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Hack</span>
+                                <span class="tag">C</span>
+                                <a href="https://kindlemodding.org" target="_blank" rel="noopener noreferrer"
+                                    class="project-link" aria-label="View project"><span
+                                        class="icon icon-blog"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ivy Wallet -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/ivy_wallet.png" alt="Ivy Wallet banner">
+                        </div>
+                        <div class="project-info">
+                            <h3>Ivy Wallet</h3>
+                            <p data-i18n="proj-ivy-desc">Added French translation.</p>
+                            <div class="tags">
+                                <span class="tag">Android</span>
+                                <span class="tag">Kotlin</span>
+                                <a href="https://github.com/Ivy-Apps/ivy-wallet" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                        class="icon icon-github"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Colorshell -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/colorshell.png" alt="colorshell banner">
+                        </div>
+                        <div class="project-info">
+                            <h3>colorshell</h3>
+                            <p data-i18n="proj-colorshell-desc">Fixed bugs.</p>
+                            <div class="tags">
+                                <span class="tag">Linux</span>
+                                <span class="tag">TypeScript</span>
+                                <a href="https://github.com/retrozinndev/colorshell" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" aria-label="View project"><span
+                                        class="icon icon-github"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Contact Links -->
+    <footer id="contact">
+        <div class="links-grid">
+            <a href="https://github.com/lucagoc" class="social-link github">
+                <span class="icon icon-github"></span>
+                <span class="text">GitHub</span>
+            </a>
+            <a href="https://gitlab.com/lucagoc" class="social-link gitlab">
+                <span class="icon icon-gitlab"></span>
+                <span class="text">GitLab</span>
+            </a>
+            <a href="mailto:lucagoc@pm.me" class="social-link email">
+                <span class="icon icon-email"></span>
+                <span class="text">Email</span>
+            </a>
+            <a href="https://ko-fi.com/lucagoc" class="social-link kofi">
+                <span class="icon icon-kofi"></span>
+                <span class="text">Ko-fi</span>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer-rights">2026 Lucas Balmès. No rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
