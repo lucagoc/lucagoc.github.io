@@ -38,7 +38,7 @@ const translations = {
         "proj-flick-dash-desc": "Android application to learn and master flick typing on a Japanese keyboard. Under review for publication.",
         "proj-owacca-desc": "Clone of the (dead) rhythm arcade game WACCA using the osu! framework. Under early development.",
         "proj-wakecommander-desc": "Velocity plugins to wake up servers that have been put to sleep.",
-        "proj-pypixelcolor-desc": "A complete Python library to control iPixel Color devices. More than 22k+ downloads.",
+        "proj-pypixelcolor-desc": "A complete Python library to control iPixel Color devices.",
         "proj-ipixelesphome-desc": "C++ port of pypixelcolor for ESPHome.",
         "proj-pal-desc": "Open-source Godot-powered launcher for arcade machines.",
         "proj-yogalinux-desc": "Collection of SSDT and custom drivers to run Linux on the Lenovo Yoga 14APU8.",
@@ -101,7 +101,7 @@ const translations = {
         "proj-flick-dash-desc": "Application Android pour apprendre et maîtriser la saisie flick sur clavier japonais. En cours d'évaluation pour publication.",
         "proj-owacca-desc": "Clone du jeu de rythme d'arcade (disparu) WACCA utilisant le framework osu!. En début de développement.",
         "proj-wakecommander-desc": "Plugins Velocity pour réveiller les serveurs mis en veille.",
-        "proj-pypixelcolor-desc": "Une bibliothèque Python complète pour contrôler les appareils iPixel Color. Plus de 22k+ téléchargements.",
+        "proj-pypixelcolor-desc": "Une bibliothèque Python complète pour contrôler les appareils iPixel Color.",
         "proj-ipixelesphome-desc": "Portage C++ de pypixelcolor pour ESPHome.",
         "proj-pal-desc": "Lanceur open-source pour bornes d'arcade propulsé par Godot.",
         "proj-yogalinux-desc": "Collection de SSDT et de pilotes personnalisés pour faire fonctionner Linux sur le Lenovo Yoga 14APU8.",
@@ -176,10 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const typeDuration = targetText.length * typeSpeed;
         const totalDuration = deleteDuration + typeDuration;
         const start = performance.now();
-        
+
         function update(time) {
             const elapsed = time - start;
-            
+
             if (elapsed < deleteDuration) {
                 // Phase 1: Deleting
                 const progress = elapsed / deleteDuration;
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.animationFrameId = null;
             }
         }
-        
+
         element.animationFrameId = requestAnimationFrame(update);
     }
 
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Wait 2 seconds showing grace.png, then flip back
             setTimeout(() => {
                 pfpCard.classList.remove('flipped');
-                
+
                 // Allow clicking again after return transition completes (600ms)
                 setTimeout(() => {
                     isAnimating = false;
