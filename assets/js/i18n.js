@@ -2,6 +2,7 @@ const translations = {
     en: {
         "nav-home": "Home",
         "nav-projects": "Projects",
+        "nav-blog": "Blog",
         "hero-subtitle": "Compile. Connect. Share.",
         "about-title": "About Me",
         "about-subtitle": "Future software engineer bridging the gap between hardware and software. Driven by open-source and Linux culture, I build robust, user-centric software solutions tailored for real-world needs.",
@@ -65,6 +66,7 @@ const translations = {
     fr: {
         "nav-home": "Accueil",
         "nav-projects": "Projets",
+        "nav-blog": "Blog",
         "hero-subtitle": "Compiler. Connecter. Partager.",
         "about-title": "À propos de moi",
         "about-subtitle": "Futur ingénieur logiciel spécialisé dans l'interface entre le matériel et l'applicatif. Porté par la culture open-source et Linux, je développe des solutions logicielles concrètes, durables et pensées pour l'utilisateur.",
